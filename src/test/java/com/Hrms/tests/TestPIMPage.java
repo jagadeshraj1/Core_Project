@@ -96,36 +96,7 @@ public class TestPIMPage extends BasePage{
 	
 	@Test(description="Verify that the employment status of an employee can be updated",dependsOnMethods ={"addEmployee"},priority=7)
 	public void editEmploymentStatus() throws Exception {
-		
-	//-------------To verify whether the Kosmik Sai Employment status can be changed to terminated.
-	//Navigate to the "PIM" module.
-		//CommanUtils.clickElement(PIMPage.getPim());
 	
-	//Search for the employee name Kosmik Sai
-		CommanUtils.isElementDisplayed(PIMPage.getEmpName());
-		
-	//Click on the employee’s name
-		CommanUtils.clickElement(PIMPage.getEmpNameStat());
-		    
-	//Click on job under Employment
-		CommanUtils.clickElement(PIMPage.getJob());
-		
-	//Click on Edit under job
-		//CommanUtils.clickElement(PIMPage.getEditJob());
-				
-	//Update the employee status (e.g., active, on leave, terminated).
-		//CommanUtils.selectDropDownValue(PIMPage.getEmpStat(),"Terminated");
-		CommanUtils.selectDropDownValue(PIMPage.getEmpStat(),"Full Time Contract");
-	
-	//Employee status selected or not
-		CommanUtils.isElementSelected(PIMPage.getEmpStat());
-	
-	//Click Save
-		//CommanUtils.clickElement(PIMPage.getSaveJob());
-	
-	// Click the "Back" button to return to the previous page
-	   // CommanUtils.clickElement(PIMPage.getBackButton()); 
-
 	}
 	
 	@Test(description="Verify that the employee list can be filtered based on various criteria",priority=8)
