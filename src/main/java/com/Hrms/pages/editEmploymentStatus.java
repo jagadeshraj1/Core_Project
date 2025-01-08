@@ -4,7 +4,8 @@ public class editEmploymentStatus {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Welcome to GitHub");
+		String G ="Welcome to GitHub";
+		System.out.println(G);
 	}
 
 }
